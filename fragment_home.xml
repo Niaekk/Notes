@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Кнопка для переходу до створення нотатки -->
+    <Button
+        android:id="@+id/createNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Створити нотатку"
+        app:layout_constraintBottom_toTopOf="@+id/viewNotesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка для перегляду збережених нотаток -->
+    <Button
+        android:id="@+id/viewNotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Переглянути нотатки"
+        app:layout_constraintBottom_toTopOf="@+id/deleteNoteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNoteButton"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка для видалення нотатки -->
+    <Button
+        android:id="@+id/deleteNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Видалити нотатку"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewNotesButton"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
